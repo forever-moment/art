@@ -1,0 +1,132 @@
+/* styles.css */
+
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.logo {
+  font-family: "Rock 3D", system-ui; /* フォントをRock 3Dに変更 */
+  font-size: 36px;
+  font-weight: 400;
+  font-style: normal;
+  color: #333; /* ロゴの色 */
+  text-transform: uppercase; /* ロゴのテキストを大文字に変換 */
+  letter-spacing: 2px; /* 文字間隔を調整 */
+  /* 任意の背景色や余白、ボーダーなども追加できます */
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10%;
+  background: #f0f0f0;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: rgb(112, 110, 110);
+}
+.hero {
+  background: url('IMG_5001.jpg') no-repeat center center/cover;
+  color: rgba(255, 255, 255, 0.674);
+  text-align: center;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+button {
+  background: rgb(37, 41, 10);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+#about, #events {
+  padding: 20px 10%;
+}
+.event {
+  display: flex;
+  align-items: center;
+}
+.event img {
+  width: 300px;
+  margin-right: 20px;
+}
+#past-projects {
+  background: #e0e0e0;
+  padding: 20px 10%;
+}
+.footer {
+  text-align: center;
+  padding: 10px;
+  background: #d0d0d0;
+}
+
+img {
+  max-width: 90%; /* 一般的な画像はページの90%の幅を持つように設定 */
+  height: auto;
+}
+
+#past-projects .project {
+  text-align: left; /* テキストを左揃えにする */
+  margin-bottom: 20px; /* 画像とテキストの間に余白を追加 */
+}
+
+/* プロジェクト画像のスタイル */
+#past-projects .project img {
+  display: inline-block; /* 画像をインラインブロック要素にする */
+  max-width: 100%;
+  height: auto;
+  max-height: 200px; /* 画像の最大高さを200pxに制限 */
+  margin-right: 10px; /* 画像の右側に余白を追加 */
+  vertical-align: middle; /* 画像を垂直方向に中央揃えにする */
+}
+
+/* プロジェクトテキストのスタイル */
+#past-projects .project p {
+  font-size: 16px; /* テキストのサイズを調整 */
+  color: #5e5a5a; /* テキストの色を黒にする */
+  margin: 0; /* デフォルトのマージンをリセット */
+  vertical-align: middle; /* テキストを垂直方向に中央揃えにする */
+}
+
+/* 画像とテキストを水平方向に中央揃え */
+#past-projects .project img,
+#past-projects .project p {
+  vertical-align: middle;
+}
+
+footer p {
+  font-size: 12px; /* テキストのサイズを小さくする */
+  color: #666; /* テキストの色をグレーにする */
+  text-align: center;
+}
+
+/* テーブルトップデバイス（画面幅が768px以上、1024px未満） */
+@media (min-width: 768px) and (max-width: 1023px) {
+  #past-projects img {
+      max-width: 80%; /* リサイズして少し小さく表示 */
+      margin: 10px auto; /* 上下の余白を追加し、中央揃え */
+  }
+}
+
+/* タブレットデバイス（画面幅が480px以上、767px未満） */
+@media (min-width: 480px) and (max-width: 767px) {
+  #past-projects img {
+      max-width: 90%; /* タブレットでは画像を少し大きく */
+      margin: 5px auto; /* 余白も少しだけ付ける */
+  }
+}
+
+/* モバイルデバイス（最大幅が479px以下） */
+@media (max-width: 600px) {
+  #past-projects img {
+      max-width: 70%; /* モバイルではやや大きめに調整 */
+  }
+}
